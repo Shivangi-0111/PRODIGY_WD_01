@@ -1,0 +1,179 @@
+body {
+    font-family: 'Arial', sans-serif; 
+    margin: 0;
+    line-height: 1.6;
+    color: #333; 
+    background: linear-gradient(to right, #2d2c2c15, #807f7e19); 
+    transition: background 0.5s ease; 
+
+.ss-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shiv-header {
+    background-color: rgba(0, 0, 0, 0.7); 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.ss-logo {
+    font-weight: bold;
+    font-size: 1.5rem; 
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease; 
+}
+
+.ss-logo:hover {
+    transform: scale(1.1); 
+}
+
+.shiv-nav .ss-nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.shiv-nav .shiv-nav-item {
+    margin-left: 20px;
+}
+
+.shiv-nav .ss-nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.shiv-auth {
+    display: flex;
+    align-items: center;
+}
+
+.ss-join, .ss-login {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.ss-join:hover, .ss-login:hover {
+    background-color: #0056b3; 
+    transform: scale(1.05); 
+}
+
+.ss-join {
+    background-color: #007bff; 
+}
+
+.shiv-hero {
+    background-image: url("pavilion-background.jpg"); 
+    background-size: cover;
+    background-position: center;
+    height: 600px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    color: white;
+    animation: fadeIn 2s ease-in-out; 
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.ss-hero-content {
+    max-width: 800px;
+    padding: 20px;
+    
+}
+
+.shiv-hero .shiv-hero-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.shiv-hero .shiv-hero-text {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.ss-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    font-weight: bold;
+    
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.ss-btn:hover {
+    background-color: #0056b3; 
+    transform: scale(1.05); 
+}
+
+.ss-primary-btn {
+    background-color: white;
+    color: #007bff;
+}
+
+.ss-secondary-btn {
+    border: 2px solid white;
+    color: white;
+}
+
+.shiv-testimonials {
+    background-color: #f8f9fa; 
+    color: #333; 
+    padding: 50px 20px;
+    text-align: center;
+    background: linear-gradient(to right, #f8f9fa, #e0e0e0); 
+}
+
+.shiv-testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.ss-testimonial {
+    margin-bottom: 20px;
+}
+
+.ss-testimonial p {
+    margin: 10px 0;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .ss-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .shiv-nav .ss-nav-list {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .shiv-nav .shiv-nav-item {
+        margin: 10px 0;
+    }
+    .shiv-hero .shiv-hero-title {
+        font-size: 2rem; 
+    }
+}
